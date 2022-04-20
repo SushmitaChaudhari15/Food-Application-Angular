@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  toggle:boolean=true;
+  constructor(private resnder:Renderer2) { }
 
   ngOnInit(): void {
   }
 
+  showToggle(){
+  this.toggle=!this.toggle;
+  }
 }
