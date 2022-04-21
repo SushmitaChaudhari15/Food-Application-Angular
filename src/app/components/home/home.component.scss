@@ -1,0 +1,174 @@
+.banner {
+    background-image: url(../../../assets/Images/banner.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: center top;
+    background-size: cover;
+
+    .content {
+        position: absolute;
+        left: 20%;
+        top: 45%;
+
+        @media screen and (max-width:767px) {
+            top: 15%;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 60px;
+            font-weight: bold;
+            width: 65%;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #fff;
+            color: #3FC060;
+            padding: 15px 20px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #3FC060;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+
+    .get-container {
+        text-align: center;
+
+        h2 {
+            font-weight: 300;
+            font-size: 30px;
+
+            span {
+                color: #3FC060;
+                text-decoration: underline;
+                font-style: italic;
+            }
+        }
+
+        .card {
+            @media screen and (min-width:767px) {
+
+                display: flex;
+                width: 100%;
+            }
+
+            .card-detail {
+                background-color: #000;
+                padding: 10px 20px;
+                border-radius: 4px;
+                text-align: center;
+                margin: 10px 10px;
+
+                @media screen and (min-width:767px) {
+                    width: 33.33%;
+
+                }
+
+                h2 {
+                    color: #3FC060;
+                    font-size: 40px;
+                    padding: 0;
+                    margin: 5px;
+                    font-weight: bold;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 20px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+
+    .food-container {
+        text-align: center;
+
+        h2 {
+            font-weight: 300;
+            font-size: 30px;
+
+            span {
+                color: #3FC060;
+                text-decoration: underline;
+                font-style: italic;
+            }
+        }
+
+        .card {
+            @media screen and (min-width:767px) {
+
+                display: flex;
+                width: 100%;
+            }
+
+            .card-detail {
+                margin: 0 13px;
+                text-align: center;
+
+                @media screen and (min-width:767px) {
+                    text-align: start;
+                    height: 425px;
+                }
+
+
+                img {
+                    width: 295px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 4px;
+
+                    @media (min-width: 765px) and (max-width: 1400px) {
+                        width: 173px;
+                    }
+
+                  
+                }
+
+                .text {
+                    @media screen and (max-width:767px) {
+                        text-align: start;
+                        width: 60%;
+                        margin: 0 auto;
+                    }
+                }
+
+                h3 {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+
+                .price {
+                    font-weight: bold;
+                }
+
+
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        background-color: #3FC060;
+        color: #000;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-size: 18px;
+
+        i {
+            margin: 8px;
+        }
+    }
+
+}
