@@ -1,11 +1,12 @@
 <nav>
     <div class="nav-container">
         <h2 class="logo">Foodies</h2>
-        <button class="navbar-toggler" type="button" (click)="showToggle()" >
-            <span class="fa fa-bars"></span>
-          </button>
-        <ul *ngIf="toggle">
-            <li><a routerLink="/home"  routerLinkActive="active" >Home</a></li>
+        <input type="checkbox" id="check">
+        <label for="check" class="navbar-toggler">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
             <li><a routerLink="/menu" routerLinkActive="active">Menu</a></li>
             <li><a routerLink="/about" routerLinkActive="active">About</a></li>
             <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>

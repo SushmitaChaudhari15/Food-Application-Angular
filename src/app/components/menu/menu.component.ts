@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodDetailsService } from 'src/app/services/food-details.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  foodDetails:any;
+  constructor(private foodService:FoodDetailsService) { }
 
   ngOnInit(): void {
+    this.foodDetails= this.foodService.foodDetails;
   }
 
 }

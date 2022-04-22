@@ -1,1 +1,17 @@
-<p>menu works!</p>
+<app-header></app-header>
+<div class="food-container">
+    <div class="card">
+        <div class="card-detail" *ngFor="let fd of foodDetails; let i=index">
+            <!-- <div *ngIf="i<=2"> -->
+                <img src="{{fd.foodImg}}" alt="">
+                <div class="text">
+                    <h3>{{fd.foodName}}</h3>
+                    <p>{{fd.foodDetails}}</p>
+                    <p class="price">{{fd.foodPrice| currency:'INR'}}</p>
+                </div>
+                <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
