@@ -1,0 +1,52 @@
+.container{
+    margin: 80px;
+    @media screen and (min-width:767px){
+        
+        height: 450px;
+    }
+    .contact-form{
+        @media screen and (min-width:767px){
+            width: 70%;
+        }
+    
+    
+    input{
+        width: 98%;
+
+        &[type=text] {
+            padding: 14px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+
+            &:focus {
+                border: 3px solid #aca6a6;
+              }
+          }
+          
+    }
+    .fname{
+        @media screen and(min-width:495px) {
+            
+            float: left;
+            width: 47%;
+            margin-top: 6px;
+            margin-right: 10px !important;
+        }
+      }
+      @media screen and(min-width:495px) {
+      .lname{
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+      }
+    }
+    button {
+        background-color: black;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+}
+}
